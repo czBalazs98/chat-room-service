@@ -1,0 +1,7 @@
+spring:
+  jpa.hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/chat_room
+    username: chat_room
+    password: Chat_room
+    driver-class-name: com.mysql.cj.jdbc.Driver
