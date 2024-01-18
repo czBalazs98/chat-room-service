@@ -8,7 +8,6 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 import hu.czmarkob.chatroomservice.chatroom.ChatRoom;
-import hu.czmarkob.chatroomservice.chatroom.ChatRoomDto;
 import hu.czmarkob.chatroomservice.chatroom.ChatRoomRepository;
 import hu.czmarkob.chatroomservice.chatroom.ChatRoomRepositoryTest;
 
