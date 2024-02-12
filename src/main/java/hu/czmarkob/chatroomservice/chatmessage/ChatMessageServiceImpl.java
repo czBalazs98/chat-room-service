@@ -6,8 +6,10 @@ import hu.czmarkob.chatroomservice.chatroom.ChatRoomRepository;
 import java.util.List;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.factory.Mappers;
 
+@Slf4j
 @RequiredArgsConstructor
 public class ChatMessageServiceImpl implements ChatMessageService {
 
@@ -25,6 +27,8 @@ public class ChatMessageServiceImpl implements ChatMessageService {
 		message.setChatRoom(chatRoom);
 
 		ChatMessage savedMessage = chatMessageRepository.save(message);
+
+		log.info("Chat message saved: " + savedMessage);
 
 		return chatMessageDtoMapper.toDto(savedMessage);
 	}

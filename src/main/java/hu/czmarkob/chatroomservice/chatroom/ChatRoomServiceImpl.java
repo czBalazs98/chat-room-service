@@ -3,8 +3,10 @@ package hu.czmarkob.chatroomservice.chatroom;
 import java.util.List;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.factory.Mappers;
 
+@Slf4j
 @RequiredArgsConstructor
 public class ChatRoomServiceImpl implements ChatRoomService {
 
@@ -31,6 +33,9 @@ public class ChatRoomServiceImpl implements ChatRoomService {
 	@Override
 	public ChatRoomDto createChatRoom(ChatRoomDto chatRoomDto) {
 		ChatRoom chatRoom = chatRoomRepository.save(mapper.fromDto(chatRoomDto));
+
+		log.info("Chat message saved: " + chatRoom);
+
 		return mapper.toDto(chatRoom);
 	}
 }

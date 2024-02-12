@@ -11,11 +11,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
+import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Entity
 @Data
+@ToString(exclude = "chatRoom")
 @EntityListeners(AuditingEntityListener.class)
 public class ChatMessage {
 
