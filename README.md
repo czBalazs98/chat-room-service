@@ -3,6 +3,9 @@
 Backend part of my Chat Room Application. 
 You can check the frontend part here: https://github.com/czBalazs98/chat-room-app
 
+## Build
+Run `mvn clean install` to build the application.
+
 ## To Run the Application
 1. Start the MySQL service from docker-compose.yml
 2. Start the application
