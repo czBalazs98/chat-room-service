@@ -1,0 +1,4 @@
+CREATE SCHEMA IF NOT EXISTS chat_room;
+CREATE USER 'chat_room' IDENTIFIED BY 'chat_room';
+GRANT ALL PRIVILEGES ON chat_room.* TO 'chat_room';
+FLUSH PRIVILEGES;

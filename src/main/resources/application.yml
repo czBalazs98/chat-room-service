@@ -3,7 +3,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/chat_room
     username: chat_room
-    password: Chat_room
+    password: chat_room
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 chat-room-service:
