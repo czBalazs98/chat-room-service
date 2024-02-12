@@ -27,7 +27,7 @@ public class ChatRoomRepositoryTest {
 		List<ChatRoom> chatRooms = chatRoomRepository.findByNameContains("test");
 
 		assertThat(chatRooms).isNotEmpty();
-		assertThat(chatRooms.get(0).getId()).isEqualTo(1L);
+		assertThat(chatRooms.get(0).getName()).contains("test");
 	}
 
 	@Test
